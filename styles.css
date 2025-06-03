@@ -193,6 +193,12 @@ button:hover {
     color: #587099;
 }
 
+.current {
+    color: #101116;
+    background-color: #8689AC;
+    border-radius: 10px;
+}
+
 @media (max-width: 800px) {
 
     img {
