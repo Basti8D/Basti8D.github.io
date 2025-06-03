@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - Bastian Lehmann, ein 16-jähriger IMS-T Lehrling in Applikationsentwicklung mit Interesse an Drohnen und RC Fahrzeugen.">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <menu class ="desktop_menu">
+        <ul class="menu">
+            <li><a href="index.html">Über Mich</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="ability.html">Fähigkeiten</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </menu>
+    <menu class="mobile_menu">
+        <input type="checkbox" name="dropdown" id="dropdown" class="dropdown">
+        <label for="dropdown" class="menu_icon">
+            <img src="img/menu_icon.webp" alt="Menü Icon" >
+        </label>
+        <ul class="menu_dropdown">
+            <li><a href="index.html">Über Mich</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="ability.html">Fähigkeiten</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </menu>
+    <div class="article">
+        <h1>Kontakt</h1>
+        <div class="paragraph1">
+            <p class="inhalt">Wenn Sie mich kontaktieren möchten, können Sie dies über die folgenden Methoden tun:</p> 
+            <a href="mailto:Bastian.Lehmann@edu.gbssg.ch">Bastian.Lehmann@ edu.gbssg.ch</a>
+        </div>
+        <div class="paragraph1">
+            <p class="inhalt">Alternativ können Sie auch das folgende Kontaktformular verwenden:</p>
+            <form method="POST"  class="contact-form" action="mailto:Bastian.Lehmann@edu.gbssg.ch">
+                <label class="contact-form" for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" required>
+                
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Absenden</button>
+            </form>
+            <p>Bei Fehlern nutzen Sie bitte die E-Mail</p>
+    </div>
+</body>
+
+</html>

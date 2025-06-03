@@ -1,0 +1,275 @@
+body {
+    background-color: #3F5576;
+    color: #101116;
+    font-family: system-ui, Ubuntu, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 20px;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inhalt {
+    max-width: 65%;
+}
+
+img {
+    margin: 20px;
+    align-items: center;
+    border-radius:20px;
+    max-width:70%;
+    min-width:30%;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.profile_img {
+    width: 20%;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.checklist {
+    width: 20%;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.sideimg {
+    width: 20%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.sidevid {
+    width: 30%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h1 {
+    padding: 40px;
+    padding-right: 40%;
+    margin: 20px;
+    background-color: #8689AC;
+    align-self: center;
+    border-radius: 10px;
+    color: #101116;
+    font-weight: bold;
+    font-size: 1.8em;
+    align-self: start;
+}
+
+h2 {
+    align-self: center;
+    color: #101116;
+    font-weight: bold;
+    font-size: 1.4em;
+    align-self: start;
+}
+.paragraph1 {
+    padding: 20px;
+    margin: 20px;
+    background-color: #8689AC;
+    align-self: center;
+    border-radius: 10px;
+    color: #101116;
+    font-size: 1.2em;
+    display: flex;
+    padding: 40px;
+    width: 82%;
+    flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: right;
+    transform: rotate(90deg);
+    background-color: #587099;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    top: 300px;
+    right: -220px;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    margin: 10px;
+    font-size: 1.2em;
+    color: #101116;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #101116;
+}
+
+a:hover {
+    color: #2F3148;
+    border-radius: 10px;
+    text-decoration: underline;
+}
+.mobile_menu {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.menu_icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu_icon img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    max-width: none;
+    min-width: none;
+    margin: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    background-color:#587099;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    background-color:#587099;
+}
+
+@media (max-width: 800px) {
+
+    img {
+    margin: 20px;
+    align-items: center;
+    border-radius:20px;
+    max-width:70%;
+    min-width:30%;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+    .sidevid {
+        width: 100%;
+        height: fit-content;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .mobile_menu {
+        display: block;
+    }
+
+    .profile_img {
+        width: 80%;
+    }
+
+    .drone_img {
+        width: 100%;
+    }
+
+    h1 {
+        padding-right: 0;
+        width: 70%;
+    }
+
+    .paragraph1 {
+        width: 100%;
+    }
+
+    .inhalt {
+    width: 100%;
+    }
+
+    menu {
+        top: 0;
+        right: 0;
+        transform: none;
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+    }
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dropdown{
+        display: none;
+    }
+    .menu_icon img {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .menu_dropdown {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #587099;
+        border-radius: 10px;
+        padding: 5px;
+        z-index: 1;
+        width: 150px;
+        
+    }
+    #dropdown:checked ~ .menu_dropdown {
+        display: block;
+    }
+    .desktop_menu {
+        display: none;
+    }
+    .profile_img {
+        width: 100%;
+        max-width: none;
+        height: auto;
+    }
+
+    .sideimg {
+    width: 100%;
+    }
+}
+
